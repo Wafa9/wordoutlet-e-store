@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
+    <title>wordoutlet</title>
     <link rel="stylesheet" href="style.css" />
 
     <!-- link for icons -->
@@ -20,9 +20,7 @@
     <!-- greensock -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
 
-    <!-- scroll animation -->
-    <link rel="stylesheet" href="animate.css" />
-    <script src="wow.min.js"></script>
+   
     <!-- bootstrap -->
     <link
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -35,6 +33,9 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+    <!-- for on scroll animations -->
+    <link rel="stylesheet" href="animate.css">
+   <!-- script src="wow.min.js"></script> < -->
   </head>
   <body>
     <div class="container">
@@ -86,19 +87,19 @@
           <div class="row">
             <div class="col-lg-6 hero-left">
               <div class="tagline">
-                <p>
+                <p class="wow fadeInUp">
                   Useful tools to simulate <br />
                   planning, productivity and creativity.
                 </p>
               </div>
 
               <div class="shipping">
-                <p>Complimentary ground shipping on orders $30+</p>
+                <p class="wow fadeInUp" data-wow-delay="0.5s">Complimentary ground shipping on orders $30+</p>
               </div>
             </div>
             <div class="col-lg-6 hero-right">
               <div class="hero-image">
-                <img src="images/hero.jpg" class="img" />
+                <img src="images/hero.jpg"  class="img wow fadeInUp" data-wow-delay="0.3s"/>
               </div>
             </div>
           </div>
@@ -148,11 +149,11 @@
 
         <div class="col-leg-4 prod-des">
           <br /><br />
-          <p>
+          <p class=" wow fadeInUp" data-wow-delay="0.5s">
             The way to get started is to quit talking and begin doing. Get
             started with our tools and boots your productivity
-          </p>
-          <div class="link">
+          </p >
+          <div  class="link wow fadeInUp" data-wow-delay="0.6s">
             <a href="shop.html"
               >shop now <ion-icon name="arrow-round-forward"></ion-icon
             ></a>
@@ -257,7 +258,17 @@
             </footer>
           </div>
         </div>
+
+
+        <!-- script -->
+    
+    
     <script type="text/javascript">
+    // scroll animation
+    
+        new WOW().init();
+
+
     // scroll background change
     $(function(){
       $(document).scroll(function(){
