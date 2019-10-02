@@ -1,41 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="harrnish - ig@harrnish">
+    <link rel="icon" href="yourIconUrl" type="image/gif" sizes="16x16">
     <title>wordoutlet</title>
-    <link rel="stylesheet" href="style.css" />
-
-    <!-- link for icons -->
+  
+    <!-- external stylesheet -->
+    <link rel="stylesheet" href="style.css">
+  
+    <!-- bootstrapcdn -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  
+    <!-- icon pack -->
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
-    <!-- google fonts -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap"
-      rel="stylesheet"
-    />
-
-    <!-- Jquery -->
+  
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+  
+    <!-- jquery cdn -->
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-    <!-- greensock -->
+  
+    <!-- tweenmax (greensock) cdn -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
-
-   
-    <!-- bootstrap -->
-    <link
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
+  
     <!-- for on scroll animations -->
     <link rel="stylesheet" href="animate.css">
-   <!-- script src="wow.min.js"></script> < -->
+    <script src="wow.min.js"></script>
   </head>
   <body>
     <div class="container">
@@ -264,35 +258,34 @@
     
     
     <script type="text/javascript">
-    // scroll animation
-    
-        new WOW().init();
+  
+    //Scroll reveal animations
 
+    new WOW().init();
 
-    // scroll background change
-    $(function(){
-      $(document).scroll(function(){
+    //Scroll activated background change
+    $(function () {
+      $(document).scroll(function () {
         var $nav = $(".nav");
         $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
       });
     });
 
-// toggle menu
+    //Toggle MENU
 
-  var t1 = new TimelineMax({ paused: true });
-  t1.to(".menu", 0.5, {
-    left: "0%",
-    ease: Power2.easeInOut
-  });
+    var t1 = new TimelineMax({ paused: true });
+    t1.to(".menu", 0.5, {
+      left: "0%",
+      ease: Power2.easeInOut
+    });
 
-  t1.reverse();
-  $(document).on("click", ".menu-open", function () {
-    t1.reversed(!t1.reversed());
-  });
-  $(document).on("click", ".menu-close", function () {
-    t1.reversed(!t1.reversed());
-  });
- 
+    t1.reverse();
+    $(document).on("click", ".menu-open", function () {
+      t1.reversed(!t1.reversed());
+    });
+    $(document).on("click", ".menu-close", function () {
+      t1.reversed(!t1.reversed());
+    });
 
     </script>
   </body>
