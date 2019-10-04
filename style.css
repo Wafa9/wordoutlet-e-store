@@ -333,3 +333,27 @@ input {
 .product-sec input {
   width: 130px;
 }
+
+@media (max-width: 900px) {
+  .product-sec .hero-image {
+    margin-top: 50%;
+    display: block !important;
+    height: 100vh;
+  }
+  .prod-opt {
+    padding-top: 300px;
+  }
+}
+
+.add-prod {
+  margin: 50px 0;
+}
+
+.add-prod a {
+  padding: 20px 40px;
+  background: #000;
+  font-weight: 300;
+  letter-spacing: 4px;
+  color: #fff !important;
+  text-decoration: none;
+}
