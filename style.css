@@ -295,3 +295,41 @@ footer p {
   font-size: 10px;
   letter-spacing: 4px;
 }
+.input-helper:before {
+  content: "";
+  display: block;
+  position: absolute;
+}
+
+.input-helper--radio {
+  padding-left: 18px;
+}
+.input-helper--radio :before {
+  top: 2px;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1px solid #222;
+}
+
+input[type="radio"] {
+  display: none;
+}
+input[type="radio"]:checked + label:before {
+  background: #222;
+}
+
+.product-sec ::placeholder,
+input {
+  font-family: "Larsseit";
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 10px;
+  letter-spacing: 4px;
+  padding-left: 10px;
+  padding-bottom: 3px;
+}
+.product-sec input {
+  width: 130px;
+}
