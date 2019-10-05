@@ -357,3 +357,6 @@ input {
   color: #fff !important;
   text-decoration: none;
 }
+.add-prod a:hover {
+  text-decoration: none;
+}
